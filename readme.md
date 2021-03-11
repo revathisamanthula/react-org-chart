@@ -92,7 +92,7 @@ You have a complete working example in the **[examples/](https://github.com/unic
 
 ```jsx
 import React from 'react'
-import OrgChart from '@unicef/react-org-chart'
+import OrgChart from '@serraview/react-org-chart'
 
 handleLoadConfig = () => {
    const { config } = this.state
