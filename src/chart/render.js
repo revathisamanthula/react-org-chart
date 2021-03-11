@@ -134,12 +134,12 @@ function render(config) {
     .append('text')
     .attr('class', PERSON_TITLE_CLASS + ' unedited')
     .attr('x', nodeWidth / 2)
-    .attr('y', namePos.y + nodePaddingY * 2.2)
+    .attr('y', namePos.y + nodePaddingY * 2.4)
     .attr('dy', '0.1em')
     .style('font-size', 12)
     .style('cursor', 'pointer')
     .style('fill', titleColor)
-    .text(d => d.person.title + (d.person.department ? ', ' + d.person.department : ''))
+    .text(d => d.person.title)
 
   const heightForTitle = 60 // getHeightForText(d.person.title)
 
