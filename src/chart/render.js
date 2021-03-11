@@ -134,12 +134,12 @@ function render(config) {
     .append('text')
     .attr('class', PERSON_TITLE_CLASS + ' unedited')
     .attr('x', nodeWidth / 2)
-    .attr('y', namePos.y + nodePaddingY * 2.4)
+    .attr('y', namePos.y + nodePaddingY * 2.2)
     .attr('dy', '0.1em')
     .style('font-size', 12)
     .style('cursor', 'pointer')
     .style('fill', titleColor)
-    .text(d => d.person.title)
+    .text(d => d.person.title + (d.person.department ? ', ' + d.person.department : ''))
 
   const heightForTitle = 60 // getHeightForText(d.person.title)
 
@@ -147,7 +147,7 @@ function render(config) {
   nodeEnter
     .append('text')
     .attr('class', PERSON_REPORTS_CLASS)
-    .attr('x', nodePaddingX + 8)
+    .attr('x', nodePaddingX + 24)
     .attr('y', namePos.y + nodePaddingY + heightForTitle)
     .attr('dy', '.9em')
     .style('font-size', 14)
@@ -185,7 +185,7 @@ function render(config) {
   const nodeLink = nodeEnter
     .append('a')
     .attr('class', PERSON_LINK_CLASS)
-    .attr('display', d => (d.person.link ? '' : 'none'))
+    .attr('display', d => (d.person.link || onPersonLinkClick ? '' : 'none'))
     .attr('xlink:href', d => d.person.link)
     .on('click', datum => {
       d3.event.stopPropagation()

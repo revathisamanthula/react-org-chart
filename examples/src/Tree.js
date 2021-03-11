@@ -5,9 +5,9 @@ export const tree = {
   person: {
     id: 100,
     avatar: avatarPersonnel,
-    department: '',
+    department: 'Development',
     name: 'Henry monger',
-    title: 'Manager',
+    title: 'Chief Operating Officer',
     totalReports: 3,
   },
   hasChild: true,
@@ -21,7 +21,7 @@ export const tree1 = [
     person: {
       id: 36,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Tomasz polaski',
       title: 'IT Specialist',
       totalReports: 4,
@@ -35,7 +35,7 @@ export const tree1 = [
     person: {
       id: 32,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Emanuel walker',
       title: 'IT Specialist',
       totalReports: 0,
@@ -49,7 +49,7 @@ export const tree1 = [
     person: {
       id: 25,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Kerry peter',
       title: 'IT Specialist',
       totalReports: 3,
@@ -66,7 +66,7 @@ export const tree2 = [
     person: {
       id: 56,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Sam John',
       title: 'HR',
       totalReports: 2,
@@ -81,7 +81,7 @@ export const tree2 = [
     person: {
       id: 66,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'John doe',
       title: 'Developer',
       totalReports: 0,
@@ -96,7 +96,7 @@ export const tree2 = [
     person: {
       id: 76,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Emilia rogers',
       title: 'Developer',
       totalReports: 0,
@@ -111,7 +111,7 @@ export const tree2 = [
     person: {
       id: 60,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Ellen cott',
       title: 'IT Officer',
       totalReports: 0,
@@ -128,7 +128,7 @@ export const tree3 = [
     person: {
       id: 70,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Kenneth dom',
       title: 'IT Officer',
       totalReports: 0,
@@ -142,7 +142,7 @@ export const tree3 = [
     person: {
       id: 45,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Kin baker',
       title: 'IT Officer',
       totalReports: 0,
@@ -159,7 +159,7 @@ export const tree4 = [
     person: {
       id: 102,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Hendy kinger',
       title: 'Manager',
       totalReports: 0,
@@ -173,7 +173,7 @@ export const tree4 = [
     person: {
       id: 455,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Kate baker',
       title: 'IT Officer',
       totalReports: 0,
@@ -187,7 +187,7 @@ export const tree4 = [
     person: {
       id: 444,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'John medis',
       title: 'IT Officer',
       totalReports: 0,
@@ -202,7 +202,7 @@ export const tree4 = [
     person: {
       id: 456,
       avatar: avatarPersonnel,
-      department: '',
+      department: 'Development',
       name: 'Brett lee',
       title: 'IT Officer',
       totalReports: 0,

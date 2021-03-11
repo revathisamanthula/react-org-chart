@@ -39,7 +39,7 @@ export default class App extends React.Component {
         person: {
           id: 500,
           avatar: avatarPersonnel,
-          department: '',
+          department: 'Development',
           name: 'Pascal ruth',
           title: 'Member',
           totalReports: 1,
@@ -54,7 +54,7 @@ export default class App extends React.Component {
         person: {
           id: 1,
           avatar: avatarPersonnel,
-          department: '',
+          department: 'Human Resources',
           name: 'Bryce joe',
           title: 'Director',
           totalReports: 1,
@@ -74,6 +74,10 @@ export default class App extends React.Component {
 
   handleOnChangeConfig = config => {
     this.setState({ config: config })
+  }
+
+  handleLinkClick = d => {
+    console.log('handleLinkClick', d);
   }
 
   handleLoadConfig = () => {
@@ -128,6 +132,7 @@ export default class App extends React.Component {
               onConfigChange={config => {
                 this.handleOnChangeConfig(config)
               }}
+              onPersonLinkClick={this.handleLinkClick}
               loadConfig={d => {
                 let configuration = this.handleLoadConfig(d)
                 if (configuration) {
